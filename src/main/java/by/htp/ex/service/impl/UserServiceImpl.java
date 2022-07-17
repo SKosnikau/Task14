@@ -10,7 +10,7 @@ import by.htp.ex.util.validation.UserDataValidation;
 import jakarta.validation.spi.ValidationProvider;
 
 public class UserServiceImpl implements UserService {
-    private final UserDao userDao = DaoProvider.getInstance().getUserDao;
+    private final UserDao userDao = DaoProvider.getInstance().getUserDao();
     private final UserDataValidation userDataValidation = ValidationProvider.getInstance().getUserDataValidation();
 
     @Override
